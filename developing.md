@@ -19,7 +19,7 @@ $arrayName = array(
 );  
 ```
 #### Notes of the Arrays.
-Padding the code depending by previous padding or after the functions, loops.
+Padding the code depending by previous padding or after the control operators (i.e. various functions like loops).
 
 
 ### The Comments
@@ -35,6 +35,54 @@ Leaving some information, which would be reasonably useful for understanding the
 ```
 #### Notes of the Comments.
 Code Documentator would help to automate the explanation of the Code.
+
+
+### The Control Statements
+
+#### About the Control Statements.
+These Statements controls the flow of the code.
+
+#### Follow the Syntax.
+If the situation requires to write in one line up to 80 characters:
+```
+$conditionYes = 'YES, all the conditions are met.';
+$conditionNo = 'NO, not all the conditions are met.';
+
+$alice = ($conditionOne && $conditionTwo);
+$alice = ($conditionOne && $conditionTwo) ? $conditionYes : $conditionNo;
+
+if ($conditionOne && $conditionTwo) {
+   //Operations containing various calls and variables (only if both conditions are met).
+   //All the code should be indented by one tab to the right.
+} elseif ($conditionOne) {
+   //Operations containing various calls and variables (only if first condition is met).
+   //All the code should be indented by one tab to the right.
+} elseif ($conditionTwo) {
+   //Operations containing various calls and variables (only if second condition is met).
+   //All the code should be indented by one tab to the right.
+} else {
+   //Operations containing various calls and variables (if no conditions were met.)
+   //All the code should be indented by one tab to the right.
+}
+```
+If the situation requires to split the code into more than one line:
+```
+$conditionYes = 'YES, all the conditions are met.';
+$conditionNo = 'NO, not all the conditions are met.';
+
+if (
+      $conditionOne 
+   && $conditionTwo
+) {
+   $bob = $conditionYes;
+}
+else {
+   $bob = $conditionNo;
+}
+
+```
+#### Notes of the Control Statements.
+After control statements it is neccessary to use indentation.
 
 
 ### The Text
