@@ -5,6 +5,7 @@
 * The Errors
 * The Interpretation of the Code
 * The Text
+
 TODO.
 
 ### The Arrays
@@ -21,6 +22,7 @@ $arrayName = array(
    ...
 );  
 ```
+
 #### Notes of the Arrays.
 Padding the code depending by previous padding or after the control operators (i.e. various functions like loops).
 
@@ -84,6 +86,7 @@ else {
 }
 
 ```
+
 #### Notes of the Control Statements.
 After control statements it is neccessary to use indentation.
 
@@ -378,10 +381,14 @@ foreach ($chk->args as $key => $value) {
 
 ?>
 ```
+
 #### Notes of the Errors.
 There exists pre-defined errors and user-defined errors.
+
 If application would get the Error or Exception, then it would be returned the same (or similar) information about it.
+
 Logging errors and (or) using syslog is good way for keeping data about errors for later use.
+
 Error logging is essential for getting hang on what happened with the environment.
 
 
@@ -399,6 +406,7 @@ If short_open_tag is enabled in php.ini and (or) by configuration:
 ```
 This code will be shown without interpretation <?= This code will be interpreted ?>
 ```
+
 #### Notes of the Interpretation of the Code.
 If file has single opening and closing tag, then first one is good enough for code to work.
 
@@ -446,8 +454,11 @@ This is our second line containing additional data from variable in the object {
 This is our third line containing additional data from array in the object {$obj->arr[0]}.
 EOT;
 ```
+
 #### Notes of the Text.
 If You have to define the String, then use single quote.
+
 If You have to extend the String containing additional functionality, then use double quote.
+
 Heredoc dislikes paddings.
   
