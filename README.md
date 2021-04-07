@@ -138,20 +138,20 @@ Error logging is essential for getting hang on what happened with the environmen
 ### The Interpretation of the Code
 
 #### About the Interpretation of the Code.
-Programming language parses the files, so there are places where interpretation starts and where ends.
+The Code between opening and closing tags will be parsed by the Interpreter.
 
 #### Follow the Syntax.
 If default parsing is defined:
 ```
-This code will be shown without interpretation <?php This code will be interpreted ?>
+This code will be shown without interpretation <?php This code will be interpreted ?> This code will be shown without interpretation
 ```
 If short_open_tag is enabled in php.ini and (or) by configuration:
 ```
-This code will be shown without interpretation <?= This code will be interpreted ?>
+This code will be shown without interpretation <?= This code will be interpreted ?> This code will be shown without interpretation
 ```
 
 #### Notes of the Interpretation of the Code.
-If file has single opening and closing tag, then first one is good enough for code to work.
+If file has single pair of the opening and closing tags, then first one is good enough for code to work.
 
 
 ### The Text
